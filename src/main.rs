@@ -1,8 +1,8 @@
 use plotters::prelude::*;
-use rand_distr::{Binomial,Distribution};
+use rand_distr::{Binomial, Distribution};
 
 fn main() {
-    let bin = Binomial::new(10000,0.01).unwrap();
+    let bin = Binomial::new(10000, 0.01).unwrap();
 
     let testResult: Vec<i32> = (0..10000)
         .into_iter()
